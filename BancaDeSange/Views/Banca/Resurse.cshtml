@@ -1,0 +1,39 @@
+﻿@model IEnumerable<BancaDeSange.Models.Banca>
+
+@{
+    ViewBag.Title = "Resurse";
+}
+
+<h2>Resurse</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Grupa_de_sange)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cantitatea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rh_ul)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Grupa_de_sange)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cantitatea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rh_ul)
+        </td>
+        
+    </tr>
+}
+
+</table>

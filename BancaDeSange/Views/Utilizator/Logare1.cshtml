@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Logare1";
+    Session["UserID"] = Guid.NewGuid();
+}
+
+<h2>Logarea a reusit</h2>
+
+@Html.ActionLink("Completeaza formularul pentru cerere", "Completeaza", "Formular")
+

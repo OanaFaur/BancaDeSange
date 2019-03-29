@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    
+    .top-left{
+
+        position: absolute;
+        top: 65px;
+        left: 260px;
+        font-size:50px;
+        opacity:0.5
+    }
+    
+
+
+</style>
+
+<div class="jumbotron">
+    
+    <img src="~/Content/medicalstaff.jpg" width=" 1000" height="450" />
+    <div class="top-left"> <img src="~/Content/banca_sange.png"/></div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Inregistrare</h2>
+        <p>
+            Creeaza-ti un cont pentru a putea utiliza aplicatia.
+        </p>
+        <p>@Html.ActionLink("Creaza-ti un cont", "Adauga", "Utilizator")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Ai deja un cont?</h2>
+        <p>Foloseste-l pentru a te loga in aplicatie.</p>
+        <p>@Html.ActionLink("Autentificare","Login", "Utilizator")</p>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
